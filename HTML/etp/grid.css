@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25px 1fr 25px;
+    row-gap: 12px;
+    column-gap: 12px;
+    height: 650px;
+}
+.item{
+    background-color: brown;
+    
+}
+.item1{
+    grid-column:1 /span 3;
+    background-color: black;
+    color: blue;
+}
+.footer{
+    grid-column:1 /span 3;
+    background-color: black;
+}

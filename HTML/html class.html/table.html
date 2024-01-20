@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table tag</title>
+    <style text="text/css">
+        table,td{
+            border: solid 1px red;
+            border-radius: 6px;
+        }
+        th{
+            background-color: aqua;
+        }
+        table{
+            box-shadow: 5px 5px 5px red;
+            border-radius: 10px;
+        }
+        #student tr:nth-child(odd){
+            background-color: grey;
+        }
+        #student tr:nth-child(even){
+            background-color: purple;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Roll No</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mo Sahil</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>xyz</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table id="student">
+        <tr>
+            <td colspan="4">Student Table</td>
+        </tr>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Roll No</th> 
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mo Sahil</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>xyz</td>
+            <td>2</td>
+        </tr>
+    </table>
+</body>
+</html>

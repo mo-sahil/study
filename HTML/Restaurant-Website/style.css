@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header{
+    background-color: #f0f0e1;
+}
+
+
+header h1{
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-family: Open Sans;
+    padding: 15px;
+}
+
+
+header nav{
+   width: 0;
+   height: 100vh;
+   transition: .2s;
+   position: fixed;
+   overflow: hidden;
+   background-color: #FFDEAD;
+   z-index: 1;
+   margin-top: -80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+header nav ul{
+    text-align: center;
+    margin-top: -80px;
+}
+
+
+header nav ul li{
+    padding-top: 20px;
+}
+
+
+header nav ul li a{
+    color: rgb(87, 18, 18);
+    font-size: 30px;
+    font-family: Libre Baskerville;
+}
+
+
+main{
+    background-color: #f0f0e1;
+    padding-bottom: 50px;
+}
+
+
+main .banner{
+    width:100%;
+    height: 60vh;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+    background-image: url("imgs/index-banner.jpg");
+}
+
+
+main .title{
+    padding: 50px 25px 0 25px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #8D6100;
+    font-weight: normal;
+}
+
+
+main .organizar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .organizar div{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 0 auto;
+}
+
+main .organizar div h1{
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 40px;
+    font-family: Anton;
+}
+
+
+main .organizar div p{
+    padding-top: 20px;
+    line-height: 29px;
+    font-family: Source Code Pro;
+    padding-bottom: 40px;
+}
+
+
+main .organizar div span{
+    background-color: #8D6100;
+    padding: 15px;
+}
+
+
+main .organizar div span a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+
+main .organizar img{
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+
+main .reserve h1{
+    letter-spacing: 6px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    max-width: 80%;
+    font-weight: normal;
+    margin: 0 auto 0 auto;
+    margin-top: 40px;
+    font-family: Bebas Neue;
+}
+
+
+main .reserve form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main .reserve form select{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    background-color: #f0f0e1;
+    font-size: 17px;
+}
+
+
+main .reserve form input{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    width: 100%;
+    background-color: #f0f0e1;
+    font-size: 17px;
+}
+
+
+main .reserve form .enviar{
+    background-color: #835c08;
+    border: none;
+    color: #fff;
+}
+
+
+
+footer{
+    background-color: #000;
+    width: 100%;
+}
+
+
+
+footer .icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+footer .icons a{
+    color: #fff;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+footer .address div div h1{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: Fjalla One;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+
+footer .address p{
+    color:#fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+footer .address hr{
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+
+
+/*Menu Page*/
+.sub-title{
+    padding: 20px 25px 0 25px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #6f4c01;
+    font-weight: normal;
+}
+
+
+main .banner-menu{
+    background-image: url("imgs/menu_banner.jpg");
+}
+
+
+main .categories{
+    width: 90%;
+    margin: 50px auto 0 auto;
+}
+
+
+main .categories a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+main .categories div{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    background-position: center;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+main .categories a div.category1{
+    background-image: url("imgs/starters_banner.jpg");
+}
+
+
+main .categories a div.category2{
+    background-image: url("imgs/typical_north_indian_dishes_banner.jpg");
+}
+
+
+main .categories a div.category3{
+    background-image: url("imgs/special_meats_banner.jpg");
+}
+
+
+main .categories a div.category4{
+    background-image: url("imgs/chicken-biryani.jpg");
+}
+
+
+main .categories a div.category5{
+    background-image: url("imgs/fish_banner.jpg");
+}
+
+
+main .categories a div.category6{
+    background-image: url("imgs/meat_banner.jpg");
+}
+
+
+main .categories a div.category7{
+    background-image: url("imgs/dessert_banner.jpg");
+}
+
+
+main .categories a div.category8{
+    background-image: url("imgs/drinks_banner.jpg");
+}
+
+
+/*Contact Page*/
+main .banner-contact{
+    background-image: url("imgs/contact_banner.jpg");
+}
+
+
+main #contact{
+    padding-top: 45px;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+
+
+main #contact input{
+    background-color: #FFFFE0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+
+
+main #contact textarea{
+    background-color: #FFFFE0;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+
+main #contact .enviar{
+    border: none;
+    color: #fff;
+    background-color: #8D6100;
+    font-size: 15px;
+}
+
+
+/* Sub pages */
+main .drinks-banner{
+    background-image: url("imgs/drinks_banner.jpg");
+}
+
+
+main .desserts-banner{
+    background-image: url("imgs/dessert_banner.jpg");
+}
+
+
+main .meats-banner{
+    background-image: url("imgs/meat_banner.jpg");
+}
+
+
+main .fishes-banner{
+    background-image: url("imgs/fish_banner.jpg");
+}
+
+
+main .biryani-banner{
+    background-image: url("imgs/biryani_banner.jpg");
+}
+
+
+main .special-meats-banner{
+    background-image: url("imgs/special_meats_banner.jpg");
+}
+
+
+main .typical-north_indian-dishes-banner{
+    background-image: url("imgs/typical_north_indian_dishes_banner.jpg");
+}
+
+
+main .starters-banner{
+    background-image: url("imgs/starters_banner.jpg");
+}
+
+
+main .borders{
+    width: 90%;
+    margin: 40px auto 0 auto;
+    border: 1px solid #000;
+}
+
+
+main .borders article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+
+main .borders article p{
+    width: 80%;
+}
+
+
+main .borders article span{
+    width: 20%;
+    text-align: right;
+}
+
+
+
+/* for PC */
+@media (min-width: 1000px){
+
+	header nav{
+       width: 100%;
+       height: 80px;
+       background-color: #FFFFE0;
+       position: static;
+       margin-top: -80px;
+       align-items: flex-end;
+    }
+
+
+    header nav ul{
+       width: 100%;
+       height: 80px;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-end;
+       justify-content: flex-end;
+       padding: 18px 17px 18px 0;
+    }
+
+    
+    header nav ul li a{
+        padding: 8px;
+    }
+
+
+    main{
+        padding-bottom: 90px;
+    }
+
+
+    main .banner{
+        height: 85vh;
+    }
+
+
+    main .title{
+        padding: 80px 0 0 0;
+        font-size: 35px;
+    }
+
+    .sub-title{
+        font-size: 25px;
+    }
+
+
+    main .organizar{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        margin: 0 auto 0 auto;
+    }
+    
+
+    main .organizar div{
+        width: 50%;
+    }
+
+
+    main .organizar div h1{
+        font-size: 35px;
+    }
+
+
+    main .organizar img{
+        min-width: 40%;
+        padding-right: 8px;
+    }
+
+
+    footer .icons a{
+        font-size: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+
+    footer  .address .all{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    footer  .address .all div{
+        padding: 25px;
+    }
+
+
+    footer .address hr{
+        width: 50%;
+    }
+
+
+    /*Menu Page*/
+    main .categories div{
+        margin: 0 auto 0 auto;
+        width: 60%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+
+    main .categories a{
+        font-size: 40px;
+    }
+
+
+    /* Sub pages */
+    main .borders{
+        width: 60%;
+    }
+
+
+    main .borders article{
+        padding: 25px;
+    }
+
+}
+
+
+/* for phones */
+@media (orientation:landscape){
+    main .banner{
+        height: 100vh;
+    }
+}
+
+
+
+@media (min-width: 400px){
+    main .organizar img{
+        width: 350px;
+    }
+}
+
+
+@media (min-width: 880px){
+    main .reservas form{
+        width: 60%;
+    }
+
+    /*Contact Page */
+    main #contact{
+        width: 60%;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 999px){
+    main .organizar img{
+        width: 450px;
+    }
+}
+

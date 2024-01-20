@@ -1,0 +1,79 @@
+control statement
+
+it is special type of statement which is used to control the program body.
+
+there are 4 types of control structures in c -
+
+1 sequential
+
+2 selection
+	1 if
+	2 if else
+	3 neasted if else 
+
+3 iteration or looping
+	1 while loop
+	2 for loop
+	3 do while loop
+
+4 decision making
+	1 switch
+	2 goto
+	3 break
+	4 continue
+
+***************
+
+whuile loop
+
+1   Although there is no initialization in the syntax of while loop, the loop variable must be initialised befor the loop starts
+2   since there is no increment/decrement in syntax of while loop , the body of loop should contain some statements that change the vale of loop variable, otherwise the
+    loop will newer end.
+
+***************
+
+getchar
+
+it is a standard function that gets a character from the keyboard and echoes it to the screen and after you press enter output is desplayed.
+
+***************
+
+argument
+
+it is a variable or package that communicates between the calling function of the called function.
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+***************
+
+
+
+
+
+
+
+

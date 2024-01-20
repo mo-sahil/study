@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1">enter first number <br><br>
+    <input type="number" id="num2">enter second number <br><br>
+    <input type="number" id="num3">enter third number <br><br>
+    <button onclick="check()">Find minimum and maximum between above 3</button>
+    <script>
+        function check(){
+            let array = [document.getElementById("num1"),document.getElementById(num2),document.getElementById(num3)];
+            let max=array[0];
+            let min=array[0];
+            for(let i=1; i<3; ++i){
+                if (array[i]>max){
+                    max=array[i];
+                }
+                if (array[i]<min){
+                    min=array[i];
+                }
+            }
+            document.write("Maximum is "+max);
+            document.write("Minimum is "+min);
+        }
+    </script>
+</body>
+</html>

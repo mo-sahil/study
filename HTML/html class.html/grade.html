@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script type="text/javascript">
+            var total, gradecounter,gradevalue,average,grade;
+            total=0;
+            gradecounter=1;
+            while (gradecounter <= 10){
+                grade=window.prompt("integer grade","0");
+                gradevalue =parseInt(grade);
+                total+=gradevalue;
+                gradecounter+=1;
+            }
+            average=total/10;
+            document.writeln("<h1> class average is "+ average+"</h1>")
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

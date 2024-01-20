@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers</title>
+</head>
+<body>
+    <button onclick="demo()">Click</button>
+    <script>
+        function demo(){
+            var num = 50;
+            var isPrime;
+            for (var i=2; i<= num; i++){
+                isPrime = 1;
+                for (var j = 2 ; j<= i/2; j++){
+                    if (i%j==0){
+                        isPrime = 0;
+                        break;
+                    }
+                }
+                if(isPrime == 1){
+                    document.write(i+"<br>")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

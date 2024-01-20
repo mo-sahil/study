@@ -1,0 +1,236 @@
+                                                Lecture 1
+
+History of c++
+    bjarne stroustrup      1979
+    c with classes / extended C
+    named C++ in 1983
+
+Facts
+    first oops language was Simula67
+    java is also written in C++
+    most of operating systems of our modern era are written in c++
+    c++ is fourth most used language in the world
+
+Features
+    C++ is a middle level language
+    it supports oops
+    C++ joins three different programming traditions
+        procedural language
+        oops language
+        generic programming supported by c++ templates
+    
+Diffrence between C and C++
+    c++ is a superset of c language
+    c++ programmes can use existing c software libraries
+    C follows top down approach of programming while c++ follows bottom up approch
+    C adopts procedure oriented while c++ adopts object oriented approach as well as procedure oriented approach
+
+using namespace std;  
+1.Namespace is a container for indentifiers  
+2.it puts the names of its member in a  diff space 
+so that they don,t conflict with the names in other namespaces 
+or global namespaces   
+
+the definition  never ends with semicolon/terminator 
+Namespaces must be defined inside the global namespace.
+we can use an extra name or alias for our already created namespace 
+Namespace is not a class  
+
+ 
+Question::(can someone clarify this one what does multiple time mean here. and what does "they are not" at the end deny?)   
+
+ 
+#include<iostream>  // # preprocessor  
+using namespace std;   
+namespace Myspace{
+  
+} 
+ int main(){ //every time code starts from main function  
+    cout<<"HELLO"<<endl;  // terminator   '/n'
+    cout<<" World";
+    //<< insertion operator 
+    //cout is object 
+    
+  return 0; // //return is keyword  
+ } 
+ 
+
+###############################################################################################################
+                                                Lecture 2
+// 1.// Variables in c++ 
+ //all variables must be declared before its use  
+ //rules of variable 
+ //it can contain digits ,numbers, letter(alphabet) 
+ //it can,t start with a number 
+ //_ underscore can be used to create a variable 
+ //We can,t give space between letters of a variable 
+ // we can,t use keyword to name a variable like return,class etc int 
+ //Declaration or defination of a variable 
+ //2.data types 
+ //3 .value   
+  //Tokens 
+ //smallest unit of code  
+ //keywords 
+ //indentifiers 
+ //Constants 
+ //Strings 
+ //Operators  
+ 
+ //Keywords 
+ //reserved words void public int  
+ //indentifiers name of variables,classes   
+ //diff b/w keywords and indentifiers  
+ // keywords starts  always with  lowercase  
+ //indentifiers can be in both lower or uppercase 
+ //keywords contain only aplhabets character but not digits or _ 
+ // //Data types 
+ //1.Primary  
+ integer
+ character
+ Boolean
+ Float 
+ Double 
+ void 
+ widecharacter
+ //2 .derived  
+ Function 
+ Array 
+ pointer 
+ Refrence
+ // 3.user defined 
+ Class 
+ Structure 
+ Union 
+ Enum 
+ typedef
+
+ //8 bit makes 1 byte 
+// 1. Integer 
+// int  
+//takes 4 byte  
+//-2147483648 to 2147483647
+//character 
+//1 byte 
+//having range -128 to 127   
+// b =98
+//A=65   
+//Float 
+//float x=10.67;
+//it will store decimal number  
+//it can give accurate results upto 7 decimal
+//it has 4 bytes 
+//Double  
+//double  
+// it has size of 8 bytes 
+// it can give accurate results upto 15 decimal
+//Boolean 
+// it stores true and false 
+//it also has 1 byte 
+//1 mean true 0 means false  
+//void means with no value  
+//represent a valueless entity 
+//wide charcater 
+//it also store character but size is greater than normal 
+//8 bit character 2 byte to 4 bytes
+
+###############################################################################################################
+                                                Lecture 03
+int main(){ 
+   int a=8, b=10; //2.67
+    //Addition 
+    cout<<"a+b = "<<(a+b)<<endl;
+    //substraction 
+    cout<<"a-b = "<<(a-b)<<endl;
+    //multiplication 
+    cout<<"a*b = "<<(a*b)<<endl;  
+    //Division
+    cout<<"a/b = "<<(a/b)<<endl; 
+    //Modulo 
+    cout<<"a%b = "<<(a%b)<<endl;
+  return 0; // //return is keyword  
+ }
+
+  int main(){ 
+  int a=6,b=4;             
+  //equal to operator 
+  cout<<"a==b"<<(a==b)<<endl; //    
+  //less than 
+   cout<<"a<b"<<(a<b)<<endl;   //
+   //greater than 
+    cout<<"a>b"<<(a>b)<<endl;  
+    //Not equal to
+     cout<<"a!=b"<<(a!=b)<<endl; //6!=4 
+  return 0; // //return is keyword  
+ }
+ 
+ int a=6,b=4;
+// Logical And operator
+cout<<"a&&b = "<<(a&&b)<<endl;
+// Logical OR operator
+cout<<"a||b = "<<(a||b)<<endl;
+
+// Logical Not operator
+cout<<"!b is = "<<(!b)<<endl;
+return 0; // //return is keyword
+
+  int a=6,b=4;
+ //Bitwise And  
+ cout<< "A&B = "<<(a&b)<<endl;
+ // Bitwise OR 
+ cout<<"A|B = "<<(a|b)<<endl;
+ // Bitwise XOR 
+ cout<<"A^B = "<<(a^b)<<endl;
+ // LEft shift  
+ cout<<"a>>1 ="<<(a>>1)<<endl;
+ //right shift 
+ cout<<"a<<1 = "<<(a<<1)<<endl;
+ //one,s complement
+ cout<<"~a = "<<(~a)<<endl;
+
+ int a=6,b=4;
+//addition Assignment operator
+a+=b; // a=a+b;
+cout<<a<<endl;
+//substraction Assignment operator
+a-=b;
+cout<<a<<endl;
+//Multiplication Assignment operator
+a*=b;
+cout<<a<<endl;
+//Division Assignment operator
+a/=b;
+cout<<a;
+
+###############################################################################################################
+                                                Lecture 06
+ int  factorial(int n){
+     int fact_n=1;
+    for(int i=1;i<=n;i++){
+      fact_n=fact_n*i;
+    }  
+    return fact_n;
+   }
+
+ int main(){  
+    int n,r;
+    cin>>n>>r;
+    int fact_n=factorial(n); 
+    int fact_r=factorial(r);
+    int fact_n_r=factorial(n-r);
+    // for(int i=1;i<=n;i++){
+    //   fact_n=fact_n*i;
+    // } 
+    // int fact_r=1;
+    // for(int i=1;i<=r;i++){
+    //   fact_r=fact_r*i;
+    // }
+    // int fact_n_r=1;
+    // for(int i=1;i<=n-r;i++){
+    //   fact_n_r=fact_n_r*i;
+    // }
+    int n_c_r=fact_n/(fact_r*fact_n_r); 
+    cout<<n_c_r;
+  return 0; 
+ }
+
+ 

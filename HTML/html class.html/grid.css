@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  background-color: #eee;
+  width: 1000px;
+  margin: 20px auto;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+}
+
+.item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: cursive;
+  color: white;
+}
+.item--1 {
+  background-color: orange;
+}
+.item--2 {
+  background-color: green;
+}
+.item--3 {
+  background-color: violet;
+}
+.item--4 {
+  background-color: pink;
+}
+.item--5 {
+  background-color: blue;
+}
+.item--6 {
+  background-color: brown;
+}/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        div{
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 40px 40px 40px 40px;
+            grid-template-columns: 50px 40px ;
+            column-gap: 5px;
+            row-gap: 5px;
+            align-content: center;
+        }
+        .item{
+            text-align: right;
+            padding-top: 10px;
+            height: 30px;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><b>Red</b></div>
+        <div class="item red"></div>
+        <div class="item"><b>Blue</b></div>
+        <div class="item blue"></div>
+        <div class="item"><b>Green</b></div>
+        <div class="item green"></div>
+        <div class="item"><b>Orange</b></div>
+        <div class="item orange"></div>
+    </div>
+</body>
+</html>

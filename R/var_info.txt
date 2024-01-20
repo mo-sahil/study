@@ -1,0 +1,2 @@
+to check present variables = ls()
+to remove any existing variable = rm()

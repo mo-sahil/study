@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <STYLE>
+        form{
+            background-color: aqua;
+        }
+    </STYLE>
+</head>
+<body>
+    <form id="form" action="form.php" method="post">
+        <fieldset>
+            <legend>profile info</legend>
+            Name:<input type="text" placeholder="Your full name here"><br>
+            Email:<input type="text" placeholder="xyz@email.com"><br>
+            Password: <input type="password" placeholder="********"><br>
+            Gender: <br>
+            <input type="radio" name="gender" >Male <br>
+            <input type="radio" name="gender">Female <br>
+            <br><br><br>
+            Type of computer: <br>
+            <input type="checkbox">I have a Laptop <br>
+            <input type="checkbox">I have a Desktop <br>
+            <br><br>
+            Age:
+            <select>
+                <option>0-12</option>
+                <option>13-18</option>
+                <option>18-25</option>
+                <option>25-35</option>
+                <option>35-60</option>
+                <option>60+</option>
+            </select><br>
+            biodata: <br>
+            <textarea cols="30" rows="4"></textarea>
+            <br><br>
+            <input type="SUBMIT" value="save my info">
+            <input type="reset" value="clear">
+            <input type="button" onclick="myfunction()" value="submit form">
+        </fieldset>
+    </form>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("form").submit();
+        }
+    </script>
+</body>
+</html>

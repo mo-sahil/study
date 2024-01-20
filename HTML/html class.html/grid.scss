@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    background-color: #eee;
+    width: 1000px;
+    margin: 20px auto;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+}
+.item{
+    padding: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+    &--1{
+        background-color: orange;
+    }
+    &--2{
+        background-color: green;
+    }
+    &--3{
+        background-color: violet;
+    }
+    &--4{
+        background-color: pink;
+    }
+    &--5{
+        background-color: blue;
+    }
+    &--6{
+        background-color: brown;
+    }
+}

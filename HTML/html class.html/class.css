@@ -1,0 +1,21 @@
+body{
+    background: #4d2;
+}
+.primary-box{
+    color: blueviolet;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    background-color: rgb(206, 205, 255);
+}
+.secondary-box{
+    color: rgb(226, 43, 83);
+    text-transform: capitalize;
+    text-decoration: dashed;
+    background-color: aqua;
+}
+.secondary-box h2{
+    color: rgb(226, 43, 73);
+}
+.primary-box h2{
+    color: rgb(226, 43, 43);
+}

@@ -1,0 +1,36 @@
+Introduction:
+"Hello there! My name is Mo Sahil, and I'm delighted to present my video resume to you. I am a first-year Computer Science student, currently pursyyuuing my B.Tech in Computer Science and Engineering at Lovely Professional University."
+
+Background and Gap Year:
+"I was born and raised in the beautiful town of Bangarmau in Uttar Pradesh, India. After completing my high school education there, I decided to take a one-year gap to prepare for the JEE entrance exam. Although I didn't achieve the desired results, it was during this time that I realized my passion for computer science and decided to pursue it as my career."
+
+[Include shots of your hometown or high school.]
+
+First Semester Achievements:
+"In my first semester at Lovely Professional University, I embarked on various exciting projects. For my Web Development project, I created a fully functional website, showcasing my skills in HTML, CSS, and JavaScript. Additionally, I designed and implemented a Smart Irrigation System for my Basic Electronics and Electrical Engineering project, demonstrating my ability to apply technical knowledge to real-world problems."
+
+[Include shots of your website and the Smart Irrigation System.]
+
+Research-Based Project:
+"As part of my Environmental Studies subject, I undertook a research-based project titled 'Changing Food Habits and its Impact on Food Resources in India.' This project allowed me to analyze and understand the effects of evolving food habits on our resources, highlighting my research, analytical, and problem-solving skills."
+
+[Include shots of your research process and findings.]
+
+Second Semester Focus:
+"In second semester, I worked on a Courier Management System project using the C language. It involved developing an efficient system to manage and track courier services, further enhancing my programming skills and problem-solving abilities."
+
+[Include shots of you coding or working on the Courier Management System.]
+
+Career Aspiration:
+"My ultimate goal is to become a Data Scientist. I am fascinated by the power of data analysis and its potential to drive meaningful insights and decision-making. I am eager to apply my skills and knowledge in this domain and contribute to the field of data science."
+
+Skills and Attributes:
+"I have a strong foundation in programming languages such as JavaScript, Python, C, and SQL. I am proficient in time management, enabling me to balance academic commitments and project deadlines effectively. I am also a quick learner, always seeking opportunities to expand my knowledge and stay up to date with the latest advancements in the field."
+
+Internship Opportunity:
+"At this stage of my academic journey, I am actively seeking internship opportunities in the field of data science. I am eager to gain hands-on experience and further develop my skills in this domain. I am open to exploring various industries and organizations that can provide a nurturing environment for my growth."
+
+Conclusion:
+"Thank you for taking the time to watch my video resume. I believe my dedication, passion for computer science, and project experiences make me a strong candidate for internships in the data science field. If you would like to discuss my qualifications further or explore potential collaboration, please feel free to contact me at sahilbmu@gmail.com . Thank you once again, and I look forward to the possibility of contributing to your organization. Have a great day!"
+
+[End with a confident smile, fade out.]]
