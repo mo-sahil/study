@@ -8,3 +8,6 @@ names
 d <- seq(from = 10, to = 100, by = 5)
 d
 d[c(-5,-8,-1)]
+
+f <- c(names, d)
+f

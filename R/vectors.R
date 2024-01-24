@@ -13,9 +13,6 @@ d
 e <- seq(from = 10, to = 100, by = 5)
 e
 
-f <- c(names, d)
-f
-
 class(a)
 class(b)
 class(c)
