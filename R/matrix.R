@@ -1,4 +1,4 @@
-a = matrix(c(1:6), nrow = 2, ncol = 3)
+a = matrix(c(1:6), nrow = 2, ncol = 3, byrow = TRUE, dimnames = list(c("R1", "R2"), c("C1", "C2", "C3")))
 a
 
 a[1,2]
@@ -27,7 +27,7 @@ for(i in 1:nrow(a)){
   }
 }
 
-b = matrix(c(1:8), nrow = 2, ncol = 4)
+b = matrix(c(1:8), nrow = 2, ncol = 4, byrow = TRUE)
 b
 
 c = rbind(a, b)
