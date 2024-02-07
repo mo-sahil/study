@@ -15,3 +15,11 @@ result
 sub <- subset(a , stud_names == "Sahil")
 sub
 
+a <-cbind(a, stud.age = c(19, 20, 21))
+a
+
+a <- rbind(a, list(4, "Aban", 9, 20))
+a
+
+s <- subset(a, stud.age > 19, select = c(stud_rollno, stud_names))
+s
