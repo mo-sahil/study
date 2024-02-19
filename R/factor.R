@@ -24,3 +24,14 @@ e
 f <- gl(3, 4, labels = c("Sahil", "Aban", "Maz"))
 f
 
+f <- factor(f, levels= c(levels(f), "Ayush"))
+levels(f)
+
+f <- factor(f, levels = c("Maz", "Aban", "Sahil", "Ayush"))
+f
+
+f[4] = "Ayush"
+f
+
+f[c(8,12)] = c("Ayush", "Ayush")
+f
