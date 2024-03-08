@@ -1,4 +1,4 @@
-power <- function(base, pow) {
+
   num = base
   for(i in 1:(pow-1)) {
     num = base * num
