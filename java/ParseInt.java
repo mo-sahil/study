@@ -1,5 +1,3 @@
-import java.util.*;
-
 class ParseInt{
     public static int decToBin(String n) {
         int dec = 0, i = n.length()-1, p = 0;
