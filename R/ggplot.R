@@ -1,0 +1,7 @@
+install.packages("ggplot2")
+library(ggplot2)
+ggplot(data = iris)
+p <- ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width))
+p + geom_point()
+p + geom_point() + facet_wrap(~Species)
+p + geom_point(col = "red") + facet_wrap(~Species) + theme(axis.text = element_text(colour = "blue", size = 12))
