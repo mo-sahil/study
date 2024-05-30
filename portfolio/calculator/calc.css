@@ -1,0 +1,47 @@
+html{
+    background: cadetblue;
+}
+
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 65px;
+    background: aqua;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mx-auto{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.row{
+    margin: 8px 0;
+}
+
+.row input{
+    margin: 0;
+    padding: 15px 0;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 25px;
+    width: 290px;
+    background: antiquewhite;
+}

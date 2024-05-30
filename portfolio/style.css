@@ -1,0 +1,247 @@
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(165, 143, 152);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(61, 28, 138);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(26, 184, 47);
+    font-size: 1.01rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.leftSection {
+    width: 50%;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.rightSection {
+    width: 50%;
+}
+
+.purple {
+    color: rgb(177, 11, 102);
+}
+
+#element {
+    color: rgb(177, 11, 102);
+}
+
+footer {
+    background-color: rgb(61, 28, 138);
+    color: wheat;
+    padding: 12px 12px;
+}
+
+.footer {
+    display: flex;
+    margin: 23px 122px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.footer>div {
+    width: 240px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+}
+
+main>p {
+    margin: 20px 200px;
+    font-size: 2rem;
+}
+
+.about {
+    color: green;
+    font-style: italic;
+}
+
+.container {
+    margin: 20px 200px;
+}
+
+input,
+textarea,
+label {
+    margin: 20px 0;
+}
+
+.project {
+    background-color: antiquewhite;
+    margin: 30px 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(165, 143, 152);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(61, 28, 138);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(26, 184, 47);
+    font-size: 1.01rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.leftSection {
+    width: 50%;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.rightSection {
+    width: 50%;
+}
+
+.purple {
+    color: rgb(177, 11, 102);
+}
+
+#element {
+    color: rgb(177, 11, 102);
+}
+
+footer {
+    background-color: rgb(61, 28, 138);
+    color: wheat;
+    padding: 12px 12px;
+}
+
+.footer {
+    display: flex;
+    margin: 23px 122px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.footer>div {
+    width: 240px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+}
+
+main>p {
+    margin: 20px 200px;
+    font-size: 2rem;
+}
+
+.about {
+    color: green;
+    font-style: italic;
+}
+
+.container {
+    margin: 20px 200px;
+}
+
+input,
+textarea,
+label {
+    margin: 20px 0;
+}
+
+.project {
+    background-color: antiquewhite;
+    margin: 30px 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+>>>>>>> cd808d9 (31=may-2024)

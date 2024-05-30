@@ -1,0 +1,59 @@
+<<<<<<< HEAD
+main {
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main > p {
+    margin: 10px 35px 10px 20px;
+    font-size: 20px;
+}
+
+main > ul {
+    margin: inherit;
+}
+
+main > ul > li {
+    margin: 10px 35px 10px 10px;
+    font-size: 15px;
+}
+=======
+main {
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main > p {
+    margin: 10px 35px 10px 20px;
+    font-size: 20px;
+}
+
+main > ul {
+    margin: inherit;
+}
+
+main > ul > li {
+    margin: 10px 35px 10px 10px;
+    font-size: 15px;
+}
+>>>>>>> cd808d9 (31=may-2024)
