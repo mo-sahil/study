@@ -1,19 +1,26 @@
-mat <- matrix(c(1:10), nrow = 5,ncol = 2, byrow = F)
-mat
+m <- matrix(1:10, 4, 5, TRUE)
+m
 
-apply(mat, 1, sum)
-apply(mat, 2, sum)
+apply(m, 2, sum)
+apply(m, 1, sum)
 
-apply(mat, 1, mean)
-apply(mat, 2, mean)
+a <- c("Sahil", "maz", "Ayush")
+a
 
-apply(mat, 1, median)
-apply(mat, 2, median)
+lapply(a, tolower)
+unlist(lapply(a, tolower))
 
-mult <- function(arr) {
-  for(i in arr) {
-    print(i*2)
-  } 
+c <- cars
+c
+
+sapply(c, max)
+lapply(c, max)
+
+avg <- function(x) {
+  (min(x) + max(x)) /2
 }
 
-apply(mat, 1, mult)
+sapply(c, avg)
+
+d <- iris
+tapply(d$Sepal.Width, d$Species, median)
