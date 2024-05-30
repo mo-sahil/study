@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <h1 class="text-center">Calculator</h1>
+    <div class="container mx-auto flex flex-col items-center">
+        <div class="row">
+            <input type="text" class="input">
+        </div>
+        <div class="row">
+            <button class="button">C</button>
+            <button class="button">%</button>
+            <button class="button">(</button>
+            <button class="button">)</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">/</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+        </div>
+        <div class="row">
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button">=</button>
+            <button class="button">-</button>
+        </div>
+    </div>
+
+    <script>
+        let string = "";
+        const display = document.querySelector('input');
+
+        function appendToExpression(value) {
+            string += value;
+            display.value = string;
+        }
+
+        function clearDisplay() {
+            string = "";
+            display.value = string;
+        }
+
+        function evaluateExpression() {
+            try {
+                const result = Function('"use strict";return (' + string + ')')();
+                if (isNaN(result) || !isFinite(result)) {
+                    throw new Error('Invalid input');
+                }
+                string = result.toString();
+                display.value = string;
+            } catch (error) {
+                string = "";
+                display.value = 'Error';
+            }
+        }
+
+        const buttons = document.querySelectorAll('.button');
+        Array.from(buttons).forEach((button) => {
+            button.addEventListener('click', (e) => {
+                if (e.target.innerHTML == '=') {
+                    evaluateExpression();
+                } else if (e.target.innerHTML == 'C') {
+                    clearDisplay();
+                } else {
+                    appendToExpression(e.target.innerHTML);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
