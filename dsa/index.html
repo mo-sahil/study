@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-Day DSA Learning Plan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+
+        .day {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .day:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .completed {
+            background-color: #e0ffe0;
+            text-decoration: line-through;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4a90e2;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>45-Day DSA Learning Plan</h1>
+
+    <!-- Week 1: Introduction to DSA and Basic Data Structures -->
+    <div class="day" id="day1">
+        <span>June 9: Introduction to DSA, importance, and complexity analysis (Big O, Big Ω, Big Θ).</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day2">
+        <span>June 10: Arrays - Introduction, operations, and implementation.</span>
+        <ul>
+            <li>Write a program to find the second largest element in an array.</li>
+            <li>Implement a function to rotate an array by `k` positions.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day3">
+        <span>June 11: Strings - Basic operations, functions, and use cases.</span>
+        <ul>
+            <li>Write a function to check if a string is a palindrome.</li>
+            <li>Implement a function to find the longest common prefix among a list of strings.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day4">
+        <span>June 12: Linked List - Introduction, singly linked list, operations (insert, delete, traverse).</span>
+        <ul>
+            <li>Implement a function to reverse a singly linked list.</li>
+            <li>Write a function to detect and remove a cycle in a linked list.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day5">
+        <span>June 13: Doubly Linked List - Implementation and operations.</span>
+        <ul>
+            <li>Implement insertion and deletion operations for a doubly linked list.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day6">
+        <span>June 14: Circular Linked List - Implementation and operations.</span>
+        <ul>
+            <li>Write a program to split a circular linked list into two halves.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day7">
+        <span>June 15: Review and coding practice - Arrays and Linked Lists.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <!-- Week 2: Advanced Data Structures -->
+    <div class="day" id="day8">
+        <span>June 16: Stacks - Introduction, implementation using arrays and linked lists.</span>
+        <ul>
+            <li>Implement a stack using two queues.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day9">
+        <span>June 17: Stacks - Applications (infix to postfix, postfix evaluation).</span>
+        <ul>
+            <li>Write a program to evaluate a postfix expression.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day10">
+        <span>June 18: Queues - Introduction, implementation using arrays and linked lists.</span>
+        <ul>
+            <li>Implement a queue using two stacks.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day11">
+        <span>June 19: Circular Queue - Implementation and operations.</span>
+        <ul>
+            <li>Write a program to generate binary numbers from 1 to `n` using a queue.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day12">
+        <span>June 20: Priority Queue - Introduction and heap implementation.</span>
+        <ul>
+            <li>Implement a priority queue using a heap.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day13">
+        <span>June 21: Deque (Double-ended queue) - Implementation and operations.</span>
+        <ul>
+            <li>Write a program to implement a deque and perform basic operations like insert, delete, and access
+                elements.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day14">
+        <span>June 22: Review and coding practice - Stacks and Queues.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <!-- Week 3: Trees -->
+    <div class="day" id="day15">
+        <span>June 23: Introduction to Trees - Terminologies, types, and basic concepts.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day16">
+        <span>June 24: Binary Trees - Implementation and traversal techniques (in-order, pre-order, post-order).</span>
+        <ul>
+            <li>Write a program to find the height of a binary tree.</li>
+            <li>Implement a function to print the level order traversal of a binary tree.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day17">
+        <span>June 25: Binary Search Tree (BST) - Implementation, insertion, deletion, and traversal.</span>
+        <ul>
+            <li>Write a function to find the lowest common ancestor (LCA) of two nodes in a BST.</li>
+            <li>Implement a function to convert a binary tree to a doubly linked list.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day18">
+        <span>June 26: AVL Trees - Introduction, rotations, and balancing.</span>
+        <ul>
+            <li>Write a program to insert elements into an AVL tree and ensure it remains balanced.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day19">
+        <span>June 27: Heap Trees - Min-Heap and Max-Heap, implementation.</span>
+        <ul>
+            <li>Implement a function to build a heap from an array.</li>
+            <li>Write a function to perform heap sort on an array.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day20">
+        <span>June 28: Trie - Introduction and implementation.</span>
+        <ul>
+            <li>Implement a trie and functions to insert and search for words.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day21">
+        <span>June 29: Review and coding practice - Trees.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <!-- Week 4: Graphs -->
+    <div class="day" id="day22">
+        <span>June 30: Graphs - Introduction, representations (adjacency matrix, adjacency list).</span>
+        <ul>
+            <li>Implement a graph using an adjacency list and an adjacency matrix.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day23">
+        <span>July 1: Depth First Search (DFS) - Theory and implementation.</span>
+        <ul>
+            <li>Write a program to perform DFS on a graph and detect cycles.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day24">
+        <span>July 2: Breadth First Search (BFS) - Theory and implementation.</span>
+        <ul>
+            <li>Implement BFS to find the shortest path in an unweighted graph.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day25">
+        <span>July 3: Shortest Path Algorithms - Dijkstra's algorithm.</span>
+        <ul>
+            <li>Implement Dijkstra's algorithm to find the shortest path in a weighted graph.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day26">
+        <span>July 4: Shortest Path Algorithms - Bellman-Ford algorithm.</span>
+        <ul>
+            <li>Implement the Bellman-Ford algorithm to find the shortest path in a graph that may have negative weight
+                edges.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day27">
+        <span>July 5: Minimum Spanning Tree - Prim's and Kruskal's algorithms.</span>
+        <ul>
+            <li>Write a program to find the Minimum Spanning Tree using Prim's algorithm.</li>
+            <li>Write a program to find the Minimum Spanning Tree using Kruskal's algorithm.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day28">
+        <span>July 6: Graphs - Topological sorting and applications.</span>
+        <ul>
+            <li>Implement a function to perform topological sort on a directed acyclic graph.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day29">
+        <span>July 7: Review and coding practice - Graphs.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <!-- Week 5: Advanced Topics -->
+    <div class="day" id="day30">
+        <span>July 8: Hashing - Introduction, hash functions, and collision resolution techniques.</span>
+        <ul>
+            <li>Implement a hash table with separate chaining for collision resolution.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day31">
+        <span>July 9: Hashing - Applications and problems.</span>
+        <ul>
+            <li>Write a function to check if two strings are anagrams using hashing.</li>
+            <li>Implement a function to find the first non-repeating character in a string using hashing.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day32">
+        <span>July 10: Recursion - Introduction and basic problems.</span>
+        <ul>
+            <li>Write a program to solve the Tower of Hanoi problem.</li>
+            <li>Implement a function to generate all permutations of a string using recursion.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day33">
+        <span>July 11: Dynamic Programming - Introduction, memoization, and tabulation.</span>
+        <ul>
+            <li>Implement the Fibonacci sequence using dynamic programming.</li>
+            <li>Write a program to solve the knapsack problem using dynamic programming.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day34">
+        <span>July 12: Dynamic Programming - Advanced problems and techniques.</span>
+        <ul>
+            <li>Implement a function to find the longest increasing subsequence in an array using dynamic programming.
+            </li>
+            <li>Write a program to solve the edit distance problem using dynamic programming.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day35">
+        <span>July 13: Greedy Algorithms - Introduction and basic problems.</span>
+        <ul>
+            <li>Write a program to find the minimum number of coins needed to make a given amount using a greedy
+                approach.</li>
+            <li>Implement a function to find the maximum number of activities that can be performed by a single person
+                given a set of activities with start and end times.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day36">
+        <span>July 14: Review and coding practice - Advanced topics.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <!-- Week 6: Algorithms and Interview Preparation -->
+    <div class="day" id="day37">
+        <span>July 15: Sorting Algorithms - Quick sort, merge sort.</span>
+        <ul>
+            <li>Implement the quick sort algorithm.</li>
+            <li>Implement the merge sort algorithm.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day38">
+        <span>July 16: Sorting Algorithms - Counting sort, radix sort.</span>
+        <ul>
+            <li>Implement the counting sort algorithm.</li>
+            <li>Implement the radix sort algorithm.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day39">
+        <span>July 17: Searching Algorithms - Binary search, linear search.</span>
+        <ul>
+            <li>Write a program to implement binary search.</li>
+            <li>Implement a function to perform linear search in an array.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day40">
+        <span>July 18: Backtracking - Introduction and basic problems.</span>
+        <ul>
+            <li>Write a program to solve the N-Queens problem using backtracking.</li>
+            <li>Implement a function to solve the Sudoku puzzle using backtracking.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day41">
+        <span>July 19: Advanced Backtracking - Problems and techniques.</span>
+        <ul>
+            <li>Implement a function to generate all subsets of a set using backtracking.</li>
+            <li>Write a program to solve the Hamiltonian Path problem using backtracking.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day42">
+        <span>July 20: Divide and Conquer - Introduction and problems.</span>
+        <ul>
+            <li>Implement a function to find the closest pair of points in a set using the divide and conquer approach.
+            </li>
+            <li>Write a program to solve the maximum subarray sum problem using divide and conquer.</li>
+        </ul>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day43">
+        <span>July 21: Review and coding practice - Algorithms.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <!-- Week 7: Interview Preparation -->
+    <div class="day" id="day44">
+        <span>July 22: Mock Interviews - Conduct mock interviews with peers or use online platforms.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+    <div class="day" id="day45">
+        <span>July 23: Final review, solving complex problems, and preparation for interviews.</span>
+        <button onclick="toggleComplete(this)">Mark as Completed</button>
+    </div>
+
+    <script>
+        function toggleComplete(button) {
+            const dayDiv = button.parentElement;
+            dayDiv.classList.toggle('completed');
+            button.textContent = dayDiv.classList.contains('completed') ? 'Mark as Incomplete' : 'Mark as Completed';
+
+            // Save completion status to local storage
+            const dayId = dayDiv.id; // You can assign unique IDs to each day for identification
+            const isCompleted = dayDiv.classList.contains('completed');
+            localStorage.setItem(dayId, isCompleted);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const days = document.querySelectorAll('.day');
+            days.forEach(dayDiv => {
+                const dayId = dayDiv.id;
+                const isCompleted = JSON.parse(localStorage.getItem(dayId));
+                if (isCompleted) {
+                    dayDiv.classList.add('completed');
+                    const button = dayDiv.querySelector('button');
+                    button.textContent = 'Mark as Incomplete';
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
