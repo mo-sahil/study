@@ -16,5 +16,4 @@ int main() {
     cout << endl << "arr1 ---> " << arr1 << endl << endl;
     
     cout << endl << "*arr1 ---> " << *arr1 << endl << endl;
-
 }
