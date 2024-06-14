@@ -25,7 +25,7 @@ string longestCommonPrefix(const vector<string>& strs) {
 }
 
 int main() {
-    vector<string> strings = {"Sahil", "Sahas", "Sithi"};
+    vector<string> strings = {"Sahil", "Sahas", "Sathi"};
     string commonPrefix = longestCommonPrefix(strings);
     
     cout << "Longest common prefix: " << commonPrefix << endl;
