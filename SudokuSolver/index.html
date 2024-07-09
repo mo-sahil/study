@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #97b1e0;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 2em;
+            margin: 0 5px;
+            background: #79a9b1;
+        }
+
+        colgroup,
+        tbody {
+            border: solid medium;
+        }
+
+        td {
+            border: solid thin;
+            height: 1.4em;
+            width: 1.4em;
+            text-align: center;
+            padding: 0;
+        }
+
+        tr:nth-child(3n) td {
+            border-bottom: solid medium;
+        }
+
+        td:nth-child(3n) {
+            border-right: solid medium;
+        }
+
+        .padd {
+            padding-bottom: 70px;
+        }
+
+        button {
+            margin-top: 15px;
+            font-size: 1.5em;
+            background-color: #1a214d;
+            color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #357ab8; /* Darker shade for hover effect */
+        }
+
+        .highlight {
+            background-color: #d3ffd3;
+        }
+    </style>
+
+    <script type="text/javascript" src="sudoku.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="padd">Sudoku Solver</h1>
+
+        <table id="board">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <button id="solve">Solve!</button>
+        </div>
+
+        <div>
+            <button id="clear">Clear Board</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById("board").addEventListener("keyup", function (event) {
+        if (event.target && event.target.nodeName == "TD") {
+            var validNum = /[1-9]/;
+            var tdEl = event.target;
+            if (tdEl.innerText.length > 0 && validNum.test(tdEl.innerText[0])) {
+                tdEl.innerText = tdEl.innerText[0];
+                tdEl.classList.add("highlight");
+            } else {
+                tdEl.innerText = "";
+                tdEl.classList.remove("highlight");
+            }
+        }
+    });
+
+    document.getElementById("solve").addEventListener("click", function (event) {
+        var boardString = boardToString();
+        var solver = SudokuSolver(TESTABLE);
+        var solution = solver.solve(boardString);
+        if (solution) {
+            stringToBoard(solution);
+        } else {
+            alert("Invalid Board!");
+        }
+    });
+
+    document.getElementById("clear").addEventListener("click", clearBoard);
+
+    function clearBoard() {
+        var tds = document.getElementsByTagName("td");
+        for (var i = 0; i < tds.length; i++) {
+            tds[i].innerText = "";
+            tds[i].classList.remove("highlight");
+        }
+    }
+
+    function boardToString() {
+        var string = "";
+        var validNum = /[1-9]/;
+
+        var tds = document.getElementsByTagName("td");
+
+        for (var i = 0; i < tds.length; i++) {
+            if (validNum.test(tds[i].innerText[0])) {
+                string += tds[i].innerText[0];
+            } else {
+                string += '-';
+            }
+        }
+
+        return string;
+    }
+
+    function stringToBoard(string) {
+        var currentCell;
+        var validNum = /[1-9]/;
+        var cells = string.split('');
+        var tds = document.getElementsByTagName("td");
+
+        for (var i = 0; i < tds.length; i++) {
+            currentCell = cells.shift();
+            if (validNum.test(currentCell)) {
+                tds[i].innerText = currentCell;
+            } else {
+                tds[i].innerText = "";
+            }
+        }
+    }
+</script>
+
+</html>
