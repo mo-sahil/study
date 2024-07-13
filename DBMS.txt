@@ -1,0 +1,41 @@
+**********************DBMS*************************
+**************Day 1 ---- 07-june-2024**************
+Relation   ------>  Table
+Attributes ------>  Column
+Tuple      ------>  Rows
+Entity     ------>  Real Objects
+********
+Schema :3 types:1) Physical
+		2) Logical
+		3) View Level Schema
+Instance : data at a particular moment
+*******
+Abstraction : hiding unnecessary information
+*******
+file management vs DBMS:
+1) Security
+2) Easy and efficient
+3) Redundancy
+4) Concurrency
+5) Scalability
+6) Durability
+7) Integrity
+All these things are better in DBMS than file system
+******
+ER Diagram: blueprint of database
+• Entities are represented by rectangles
+• Attributes ---> Oval
+• Primary Key ---> Oval with underline
+• Weak Entity ---> Double Rectangle
+******
+Ques) There is an organisation where there are 3 types of departments. Each department is having 15-20 employees. The employees work for a fixed number of hours and they have a unique ID so that they can be recognised. The information related to employees is stored in a different table emp_basic_details, which may include number of dependents and other family details. Design ER Diagram.
+
+
+Ques) there is an educational institute that has 5 different departments each having fixed number of hours and each employee can work in different departments. Information related to courses taught by employees is stored in employee table. There is a separate table for courses running in the institute. Design an ER Diagram for this.
+
+
+
+
+
+
+
