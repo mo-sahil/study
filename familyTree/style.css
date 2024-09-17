@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#familyTree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Enable scrolling */
+    max-height: 80vh; /* Max height for scrolling */
+    width: 100%; /* Full width */
+}
+
+/* Styling for the tree */
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    display: flex; /* Display all children horizontally by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.tree li {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+/* Connecting lines between parents and children */
+.tree li::before,
+.tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 2px solid #ccc;
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 2px solid #ccc;
+}
+
+.tree li:only-child::after,
+.tree li:only-child::before {
+    display: none;
+}
+
+.tree ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid #ccc;
+    width: 0;
+    height: 20px;
+}
+
+/* Styling for the person nodes with fixed size */
+.tree li span.person-box {
+    border: 2px solid #555;
+    padding: 10px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    position: relative;
+    width: 150px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    line-height: 30px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if the content is too large */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.tree li span.person-box:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+
+/* Small circular expand/collapse button */
+.collapse {
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: #444;
+    border-radius: 50%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: relative;
+    top: -20px; /* Align with the box */
+    left: 5px;  /* Position it near the box */
+}
+
+.collapse:hover {
+    background-color: #666;
+}
