@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects - Mo Sahil</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav>
-            <div class="left">Sahil's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="project project1">
-            <h2>Calculator</h2>
-            <p>A simple Calculator built with HTML, CSS and JavaScript.</p>
-            <a href="calculator/Calculator.html" target="_blank">Click here to check it out!</a>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+            <!-- Project 1: Spotify Clone -->
+            <div class="project-card">
+                <img src="images/spotifyClone.png" alt="Spotify Clone Snapshot">
+                <h3>Spotify Clone</h3>
+                <p>A Spotify clone built with HTML, CSS, and JavaScript.</p>
+                <a href="https://mo-sahil.me/spotify/index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2: Sudoku Solver -->
+            <div class="project-card">
+                <img src="images/sudoku-solver.png" alt="Sudoku Solver Snapshot">
+                <h3>Sudoku Solver</h3>
+                <p>A Sudoku solver built using the backtracking algorithm, implemented with HTML, CSS, and JavaScript.</p>
+                <a href="http://mo-sahil.me/SudokuSolver/index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 3: SMS Spam Detection Analysis -->
+            <div class="project-card">
+                <img src="images/sms-spam-detection.png" alt="SMS Spam Detection Snapshot">
+                <h3>SMS Spam Detection Analysis</h3>
+                <p>Uses a Naive Bayes classifier to detect spam messages in the SMS Spam Collection dataset, implemented with R Language.</p>
+                <a href="http://mo-sahil.me/Spam_detector.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 4: Restaurant Website -->
+            <div class="project-card">
+                <img src="images/restaurant-website.png" alt="Restaurant Website Snapshot">
+                <h3>Restaurant Website</h3>
+                <p>A simple static restaurant website built using HTML, CSS, and JavaScript.</p>
+                <a href="http://mo-sahil.me/restaurant-website/index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 5: QR Code Generator -->
+            <div class="project-card">
+                <img src="images/qr.png" alt="QR Code Generator Snapshot">
+                <h3>QR Code Generator</h3>
+                <p>A simple QR Code generator built with HTML, CSS, and JavaScript.</p>
+                <a href="http://mo-sahil.me/QR-Code-Generator/index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 6: Calculator -->
+            <div class="project-card">
+                <img src="images/calculator.png" alt="Calculator Snapshot">
+                <h3>Calculator</h3>
+                <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
+                <a href="http://mo-sahil.me/calculator/Calculator.html" target="_blank">View Project</a>
+            </div>
+
         </div>
-        <div class="project project2">
-            <h2>Voting Management System</h2>
-            <p>A console-based Java project for managing votes.</p>
-            <a href="https://github.com/mo-sahil/Voting-Management-System" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project project3">
-            <h2>QR Code Generator</h2>
-            <p>A simple QR Code Generator built with HTML, CSS and JavaScript.</p>
-            <a href="QR-Code-Generator/index.html" target="_blank">Click here to check it out!</a>
-        </div>
-    </main>
+    </section>
 
     <footer>
-        <div class="footer">
-            <div class="first-footer">
-                <h3>Sahil's Portfolio</h3>
-            </div>
-            <div class="second-footer">
-                <a href="http://www.linkedin.com/in/mo-sahil-704473252" target="_blank">
-                    <img class="social" src="https://i.ibb.co/NLcv9Qk/LinkedIn.png">
-                </a>
-            </div>
-            <div class="second-footer">
-                <a href="mailto:sahilbmu@gmail.com">
-                    <img class="social" src="https://i.ibb.co/YDCy4q8/email.png">
-                </a>
-            </div>
-            <div class="second-footer">
-                <a href="https://github.com/Mo-Sahill" target="_blank">
-                    <img src="https://i.ibb.co/2YWrkHK/github.png" class="social">
-                </a>
-            </div>
-        </div>
+        <p>© 2024 Mo Sahil. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-
 </html>

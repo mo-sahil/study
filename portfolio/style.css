@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,242 +6,278 @@
 }
 
 body {
-    background-color: rgb(165, 143, 152);
-    color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    background-color: rgb(61, 28, 138);
+/* Sticky navigation */
+header {
+    background-color: #053d72;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
 }
 
+nav ul li {
+    margin: 0 15px;
+}
+
 nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: rgb(26, 184, 47);
-    font-size: 1.01rem;
+    color: #ff6347;
 }
 
-nav ul li {
-    list-style: none;
-    margin: 0 30px;
-}
-
-.left {
-    font-size: 2rem;
-}
-
-.firstSection {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 60px 0;
-}
-
-.leftSection {
-    width: 50%;
-    font-size: 2rem;
-    margin-left: 20px;
-}
-
-.rightSection {
-    width: 50%;
-}
-
-.purple {
-    color: rgb(177, 11, 102);
-}
-
-#element {
-    color: rgb(177, 11, 102);
-}
-
-footer {
-    background-color: rgb(61, 28, 138);
-    color: wheat;
-    padding: 12px 12px;
-}
-
-.footer {
-    display: flex;
-    margin: 23px 122px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-footer ul li {
-    list-style: none;
-}
-
-.footer>div {
-    width: 240px;
-}
-
-.social {
-    width: 50px;
-    height: 50px;
-}
-
-main>p {
-    margin: 20px 200px;
-    font-size: 2rem;
-}
-
-.about {
-    color: green;
-    font-style: italic;
-}
-
-.container {
-    margin: 20px 200px;
-}
-
-input,
-textarea,
-label {
-    margin: 20px 0;
-}
-
-.project {
-    background-color: antiquewhite;
-    margin: 30px 50px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-}
-=======
-* {
+section {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(165, 143, 152);
-    color: black;
-    font-family: 'Poppins', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    background-color: rgb(61, 28, 138);
-}
-
-nav ul {
+/* Home section with full-screen background */
+#home {
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), 
+        url('background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
 }
 
-nav ul li a {
+.intro {
+    display: flex; /* Align items side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align content */
+    max-width: 1200px; /* Max width of the content */
+    width: 100%;
+    padding: 20px;
+}
+
+/* Text content */
+.intro-text {
+    max-width: 50%; /* Restrict the text to 50% of the screen */
+}
+
+.intro-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    background-color: #ff6347;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
     text-decoration: none;
-    color: white;
+    transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: rgb(26, 184, 47);
-    font-size: 1.01rem;
+.btn:hover {
+    background-color: #ff4500;
 }
 
-nav ul li {
-    list-style: none;
-    margin: 0 30px;
-}
-
-.left {
-    font-size: 2rem;
-}
-
-.firstSection {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 60px 0;
-}
-
-.leftSection {
-    width: 50%;
-    font-size: 2rem;
-    margin-left: 20px;
-}
-
-.rightSection {
-    width: 50%;
-}
-
-.purple {
-    color: rgb(177, 11, 102);
-}
-
-#element {
-    color: rgb(177, 11, 102);
-}
-
-footer {
-    background-color: rgb(61, 28, 138);
-    color: wheat;
-    padding: 12px 12px;
-}
-
-.footer {
-    display: flex;
-    margin: 23px 122px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-footer ul li {
-    list-style: none;
-}
-
-.footer>div {
-    width: 240px;
-}
-
-.social {
-    width: 50px;
-    height: 50px;
-}
-
-main>p {
-    margin: 20px 200px;
-    font-size: 2rem;
-}
-
-.about {
-    color: green;
-    font-style: italic;
-}
-
-.container {
-    margin: 20px 200px;
-}
-
-input,
-textarea,
-label {
-    margin: 20px 0;
-}
-
-.project {
-    background-color: antiquewhite;
-    margin: 30px 50px;
+/* Image styling */
+.intro-image {
+    max-width: 40%; /* Restrict image to 50% of the screen */
     text-align: center;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
 }
->>>>>>> cd808d9 (31=may-2024)
+
+.intro-image img {
+    max-width: 100%; /* Ensure the image scales */
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #ffffff; /* Add a white border for contrast */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Add a shadow for depth */
+}
+
+
+/* General section styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#projects {
+    padding: 50px 0;
+    background-color: #1e1e1e; /* Darker background for projects section */
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff; /* White title color */
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #282828; /* Card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #ff6347; /* Highlighted project title */
+}
+
+.project-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #b0b0b0; /* Gray text color */
+}
+
+.project-card a {
+    display: inline-block;
+    background-color: #ff6347; /* Button background */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #e5533f; /* Darker button on hover */
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #1e1e1e; /* Darker background */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff; /* White title color */
+}
+
+/* Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #282828; /* Card background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #e0e0e0; /* Light text color */
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background-color: #333; /* Dark input background */
+    color: #ffffff; /* Light text color */
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6347; /* Highlighted border on focus */
+}
+
+.submit-button {
+    background-color: #ff6347; /* Button background */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e5533f; /* Darker button on hover */
+}
+
+.email-link {
+    color: #ff6347; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e; /* Dark footer background */
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
