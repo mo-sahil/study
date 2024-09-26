@@ -1,6 +1,6 @@
 console.log("Hello World");
 
-alert("hello World");
+//alert("hello World");
 
 let fname = "Mo Sahil";
 console.log("My name is " + fname);
