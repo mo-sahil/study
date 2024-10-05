@@ -21,7 +21,7 @@ function initializeGame() {
         cell.addEventListener("click", () => {
             if (!gameWon && cell.innerHTML === "") {
                 if (move === 1) {
-                    cell.innerHTML = `<img src="imgs/zero.jpg" style="width:100%; height:100%;" />`;
+                    cell.innerHTML = `<img src="imgs/zero.png" style="width:100%; height:100%;" />`;
                     winnerSymbol = "O";
                     move = 2;
                 } else {
