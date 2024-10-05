@@ -99,4 +99,7 @@ h1 {
     .cell {
         font-size: 1.5rem;
     }
+    .result-overlay{
+        top: 180px;
+    }
 }
