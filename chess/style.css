@@ -1,91 +1,40 @@
-.square{
-    width: 75px;
-    height: 75px;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #cdb4db;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.main-container{
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc8dd;
+    border-radius: 2rem;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.board{
     display: grid;
-    grid-template-columns: repeat(8, 75px);
-    border: 2px solid black;
-    border-radius: 5px;
-    overflow: hidden;
+    grid-template-columns: repeat(8, 10vh);
+    grid-template-rows: repeat(8, 10vh);
 }
 
-.big-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+.cell{
+    height: 10vh;
+    width: 10vh;
+    border: 1px grey solid;
 }
 
-.file-a .square:nth-of-type(even){
-    background-color: rgb(5, 125, 27);
+.cell img{
+    height: 10vh;
+    width: 10vh;
 }
 
-.file-b .square:nth-of-type(odd){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-c .square:nth-of-type(even){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-d .square:nth-of-type(odd){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-e .square:nth-of-type(even){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-f .square:nth-of-type(odd){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-g .square:nth-of-type(even){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-h .square:nth-of-type(odd){
-    background-color: rgb(5, 125, 27);
-}
-
-.file-a .square:nth-of-type(odd){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-b .square:nth-of-type(even){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-c .square:nth-of-type(odd){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-d .square:nth-of-type(even){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-e .square:nth-of-type(odd){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-f .square:nth-of-type(even){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-g .square:nth-of-type(odd){
-    background-color: rgb(231, 215, 202);
-}
-
-.file-h .square:nth-of-type(even){
-    background-color: rgb(231, 215, 202);
-}
-
-img{
-    background: none;
-    height: 80px;
+.highlight{
+    background-color: rgba(87, 255, 87, 0.466);
 }
