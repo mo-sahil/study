@@ -1,2 +1,4 @@
-const sahil = require("/home/sahil/study/nodejs/export.js");
-console.log("Hello World!", sahil);
+const math = require('./math.js')
+
+
+console.log("Hello World!", math.sub(2, 3));
