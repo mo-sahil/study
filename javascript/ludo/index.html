@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="board">
+        <div class="redHome"></div>
+        <div class="pathVer">
+            <div class="RowVer">
+                <div class="cell" id="cell12">12</div>
+                <div class="cell" id="cell11">11</div>
+                <div class="cell" id="cell10">10</div>
+                <div class="cell" id="cell9">9</div>
+                <div class="cell" id="cell8">8</div>
+                <div class="cell" id="cell7">7</div>
+            </div>
+            <div class="RowVer">
+                <div class="cell" id="cell13">13</div>
+                <div class="cell" id="cellg1">g1</div>
+                <div class="cell" id="cellg2">g2</div>
+                <div class="cell" id="cellg3">g3</div>
+                <div class="cell" id="cellg4">g4</div>
+                <div class="cell" id="cellg5">g5</div>
+            </div>
+            <div class="RowVer">
+                <div class="cell" id="cell14">14</div>
+                <div class="cell" id="cell15">15</div>
+                <div class="cell" id="cell16">16</div>
+                <div class="cell" id="cell17">17</div>
+                <div class="cell" id="cell18">18</div>
+                <div class="cell" id="cell19">19</div>
+            </div>
+        </div>
+        <div class="greenHome"></div>
+        <div class="pathHor">
+            <div class="RowHor">
+                <div class="cell" id="cell1">1</div>
+                <div class="cell" id="cell2">2 <img src="imgs/red.png" alt=""></div>
+                <div class="cell" id="cell3">3</div>
+                <div class="cell" id="cell4">4</div>
+                <div class="cell" id="cell5">5</div>
+                <div class="cell" id="cell6">6</div>
+            </div>
+            <div class="RowHor">
+                <div class="cell" id="cell52">52</div>
+                <div class="cell" id="cellr1">r1</div>
+                <div class="cell" id="cellr2">r2</div>
+                <div class="cell" id="cellr3">r3</div>
+                <div class="cell" id="cellr4">r4</div>
+                <div class="cell" id="cellr5">r5</div>
+            </div>
+            <div class="RowHor">
+                <div class="cell" id="cell51">51</div>
+                <div class="cell" id="cell50">50</div>
+                <div class="cell" id="cell49">49</div>
+                <div class="cell" id="cell48">48</div>
+                <div class="cell" id="cell47">47</div>
+                <div class="cell" id="cell46">46</div>
+            </div>
+        </div>
+        <div class="center"></div>
+        <div class="pathHor">
+            <div class="RowHor">
+                <div class="cell" id="cell20">20</div>
+                <div class="cell" id="cell21">21</div>
+                <div class="cell" id="cell22">22</div>
+                <div class="cell" id="cell23">23</div>
+                <div class="cell" id="cell24">24</div>
+                <div class="cell" id="cell25">25</div>
+            </div>
+            <div class="RowHor">
+                <div class="cell" id="celly5">y5</div>
+                <div class="cell" id="celly4">y4</div>
+                <div class="cell" id="celly3">y3</div>
+                <div class="cell" id="celly2">y2</div>
+                <div class="cell" id="celly1">y1</div>
+                <div class="cell" id="cell26">26</div>
+            </div>
+            <div class="RowHor">
+                <div class="cell" id="cell32">32</div>
+                <div class="cell" id="cell31">31</div>
+                <div class="cell" id="cell30">30</div>
+                <div class="cell" id="cell29">29</div>
+                <div class="cell" id="cell28">28</div>
+                <div class="cell" id="cell27">27</div>
+            </div>
+        </div>
+        <div class="blueHome"></div>
+        <div class="pathVer">
+            <div class="RowVer">
+                <div class="cell" id="cell45">45</div>
+                <div class="cell" id="cell44">44</div>
+                <div class="cell" id="cell43">43</div>
+                <div class="cell" id="cell42">42</div>
+                <div class="cell" id="cell41">41</div>
+                <div class="cell" id="cell40">40</div>
+            </div>
+            <div class="RowVer">
+                <div class="cell" id="cellb5">b5</div>
+                <div class="cell" id="cellb4">b4</div>
+                <div class="cell" id="cellb3">b3</div>
+                <div class="cell" id="cellb2">b2</div>
+                <div class="cell" id="cellb1">b1</div>
+                <div class="cell" id="cell39">39</div>
+            </div>
+            <div class="RowVer">
+                <div class="cell" id="cell33">33</div>
+                <div class="cell" id="cell34">34</div>
+                <div class="cell" id="cell35">35</div>
+                <div class="cell" id="cell36">36</div>
+                <div class="cell" id="cell37">37</div>
+                <div class="cell" id="cell38">38</div>
+            </div>
+        </div>
+        <div class="yellowHome"></div>
+    </div>
+
+    <button id="roll-dice">Roll Dice</button>
+    <div id="dice-result">Dice Result: </div>
+    <div class="turn">
+        <p>Player's Turn</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

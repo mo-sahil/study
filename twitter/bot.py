@@ -14,7 +14,7 @@ BEARER_TOKEN = os.getenv('BEARER_TOKEN')
 client = tweepy.Client(bearer_token=BEARER_TOKEN, consumer_key=API_KEY, consumer_secret=API_SECRET_KEY, access_token=ACCESS_TOKEN, access_token_secret=ACCESS_TOKEN_SECRET)
 
 try:
-    response = client.create_tweet(text="Hello world! Trying X API v2.")
+    response = client.create_tweet(text="Hello World")
     print(f"Tweet posted successfully with ID: {response.data['id']}")
 except tweepy.TweepyException as error:
     print(f"Error occurred: {error}")
