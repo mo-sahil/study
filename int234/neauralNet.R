@@ -1,23 +1,20 @@
-setwd("C:/users/Sahil/Downloads")
+library(nnet)
+library(NeuralNetTools)
 
-df <- read.csv("Concrete_Data.csv")
-View(df)
-
-library(neuralnet)
-library(ggplot2)
+df <- iris
 
 set.seed(123)
-trainIndex <- createDataPartition(df$strength, p = 0.8, list = FALSE)
-train_data <- df[trainIndex, ]
-test_data <- df[-trainIndex, ]
+trainIndex <- sample(1:nrow(df), 0.7 * nrow(df))
+train <- df[trainIndex,]
+test <- df[-trainIndex,]
 
-nn_model <- neuralnet(strength ~ cement + slag + ash + water + superplasticizer + coarseagg + fineagg + age, data = train_data, hidden = 5)
-nn_predictions <- predict(nn_model, test_data)
-nn_predictions <- ifelse(nn_predictions > 0.5, 1, 0)
+model <- nnet(Species ~ ., data = train, size = 2, maxit = 1000, trace = FALSE)
+pred <- predict(model, test, type = "class")
 
-conf_matrix <- table(nn_predictions, test_data$strength)
-conf_matrix
+cm <- table(test$Species, pred)
+cm
 
-accuracy <- sum(diag(conf_matrix)) / sum(conf_matrix) * 100
+accuracy <- sum(diag(cm)) / sum(cm)*100
 accuracy
-d2 <- file.choose()
+
+plotnet(model)

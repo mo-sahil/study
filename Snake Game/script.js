@@ -1,7 +1,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const scoreDisplay = document.getElementById('score');
-const restartButton = document.getElementById('restartButton');
+const restartButton = document.getElementsByClassName('restartButton');
 const speedSelect = document.getElementById('speed');
 const menu = document.getElementById('menu');
 const finalScoreDisplay = document.getElementById('finalScore');
@@ -10,17 +10,17 @@ const downButton = document.getElementById('down');
 const leftButton = document.getElementById('left');
 const rightButton = document.getElementById('right');
 
-const box = 20; // Size of each snake segment and food
+const box = 20;
 
 let snake;
 let food;
-let score;
+let score = 0;
 let direction;
 let game;
-let gameSpeed = 100;
+let gameSpeed = 10;
 
 document.addEventListener('keydown', changeDirection);
-restartButton.addEventListener('click', restartGame);
+restartButton[0].addEventListener('click', restartGame);
 upButton.addEventListener('click', () => changeDirection({ keyCode: 38 }));
 downButton.addEventListener('click', () => changeDirection({ keyCode: 40 }));
 leftButton.addEventListener('click', () => changeDirection({ keyCode: 37 }));
@@ -38,7 +38,6 @@ function init() {
         y: Math.floor(Math.random() * 19 + 1) * box
     };
 
-    score = 0;
     direction = null;
     scoreDisplay.innerHTML = "Score: " + score;
 
@@ -87,32 +86,28 @@ function draw() {
     if (direction === 'RIGHT') snakeX += box;
     if (direction === 'DOWN') snakeY += box;
 
-    // If snake eats the food
     if (snakeX === food.x && snakeY === food.y) {
         score++;
-        scoreDisplay.innerHTML = "Score: " + score; // Update score display
+        scoreDisplay.innerHTML = "Score: " + score;
         food = {
             x: Math.floor(Math.random() * 19 + 1) * box,
             y: Math.floor(Math.random() * 19 + 1) * box
         };
     } else {
-        // Remove the tail
         snake.pop();
     }
 
-    // Add new head
     let newHead = {
         x: snakeX,
         y: snakeY
     };
 
-    // Game over conditions
     if (snakeX < 0 || snakeX >= canvas.width || snakeY < 0 || snakeY >= canvas.height || collision(newHead, snake)) {
+
         clearInterval(game);
         finalScoreDisplay.innerHTML = score;
         menu.classList.remove('hidden');
         canvas.classList.add('hidden');
-        scoreDisplay.classList.add('hidden');
         return;
     }
 
@@ -130,7 +125,8 @@ function collision(head, array) {
 
 function restartGame() {
     gameSpeed = parseInt(speedSelect.value);
+    score = 0;
     init();
 }
 
-init(); // Start the game for the first time
+init();
