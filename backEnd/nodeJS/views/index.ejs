@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="index">
+        <section class="intro">
+            Hi, My name is <span class="name">Mo Sahil</span> and I am a <span id="element"></span>
+        </section>
+
+        <section class="form">
+            <form action="/get-form-data" method="post">
+                <input type="text" placeholder="Enter Username" name="Username">
+                <input type="text" placeholder="Enter Password" name="Password">
+                <button>Submit Form</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', "Cyber Security Enthusiast", 'Data Scientist'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

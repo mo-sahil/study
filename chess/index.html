@@ -1,161 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess</title>
+    <title>Chess Game</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="./logic/mapping.js"></script>
-    <script defer src="logic/clickhandling.js"></script>
 </head>
+
 <body>
-    <div class="big-container">
-        <div class="main-container">
-            <div class="file-a files">
-                <div class="square">
-                    <img src="images/black/rook.png" class="rook">
-                </div>
-                <div class="square" >
-                    <img src="images/black/pawn.png" class="blackPawn">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn">
-                </div>
-                <div class="square">
-                    <img src="images/white/rook.png" class="rook">
-                </div>
+    <div class="container">
+        <h1>Chess Board</h1>
+        <div id="turn-indicator">White's Turn</div>
+
+        <div class="board">
+            <div draggable="true" class="cell">
+                <img src="images/black/rook.png" class="black black_rook">
             </div>
-            <div class="file-b files">
-                <div class="square">
-                    <img src="images/black/knight.png" class="knight">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/knight.png" class="knight piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/knight.png" class="black black_knight">
             </div>
-            <div class="file-c files">
-                <div class="square">
-                    <img src="images/black/bishop.png" class="bishop piece">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn piece">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/bishop.png" class="bishop piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/bishop.png" class="black black_bishop">
             </div>
-            <div class="file-d files">
-                <div class="square">
-                    <img src="images/black/queen.png" class="queen piece">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn piece">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/queen.png" class="queen piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/queen.png" class="black black_queen">
             </div>
-            <div class="file-e files">
-                <div class="square">
-                    <img src="images/black/king.png" class="king piece">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn piece">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/king.png" class="king piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/king.png" class="black black_king">
             </div>
-            <div class="file-f files">
-                <div class="square">
-                    <img src="images/black/bishop.png" class="bishop piece">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn piece">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/bishop.png" class="bishop piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/bishop.png" class="black black_bishop">
             </div>
-            <div class="file-g files">
-                <div class="square">
-                    <img src="images/black/knight.png" class="knight piece">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn piece">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/knight.png" class="knight piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/knight.png" class="black black_knight">
             </div>
-            <div class="file-h files">
-                <div class="square">
-                    <img src="images/black/rook.png" class="rook piece">
-                </div>
-                <div class="square">
-                    <img src="images/black/pawn.png" class="blackPawn piece">
-                </div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square">
-                    <img src="images/white/pawn.png" class="whitePawn piece">
-                </div>
-                <div class="square">
-                    <img src="images/white/rook.png" class="rook piece">
-                </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/rook.png" class="black black_rook">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/black/pawn.png" class="black black_pawn">
+            </div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell"></div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/pawn.png" class="white white_pawn">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/rook.png" class="white white_rook">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/knight.png" class="white white_knight">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/bishop.png" class="white white_bishop">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/queen.png" class="white white_queen">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/king.png" class="white white_king">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/bishop.png" class="white white_bishop">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/knight.png" class="white white_knight">
+            </div>
+            <div draggable="true" class="cell">
+                <img src="images/white/rook.png" class="white white_rook">
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>

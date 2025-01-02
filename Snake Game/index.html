@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Snake Game</h1>
+    <h1 id="title">Snake Game</h1>
     <div id="score">Score: 0</div>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <canvas id="gameCanvas" width="700" height="450"></canvas>
     <div id="menu" class="hidden">
       <h2>Game Over</h2>
       <p>Your score: <span id="finalScore"></span></p>
-      <label for="speed">Select Speed:</label>
-      <select id="speed">
-        <option value="100">Normal</option>
-        <option value="75">Fast</option>
-        <option value="50">Faster</option>
-        <option value="25">Fastest</option>
-      </select>
-      <button id="restartButton">Restart</button>
+      
     </div>
+    <div id = "chooseSpeed">
+      <label for="speed">Select Speed:</label>
+        <select id="speed">
+          <option value="80">Normal</option>
+          <option value="60">Fast</option>
+          <option value="40">Faster</option>
+          <option value="20">Fastest</option>
+        </select>
+    </div>
+    <button class="restartButton">Restart</button>
 
     <div id="controls">
       <button id="up" class="control-button">Up</button>

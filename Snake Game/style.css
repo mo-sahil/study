@@ -5,36 +5,39 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #009990;
     font-family: Arial, sans-serif;
 }
 
-h1 {
-    margin-bottom: 20px;
+#title{
+    position: fixed;
+    top: 0;
+    padding-bottom: 10px;
 }
 
-#score {
-    font-size: 24px;
-    margin-bottom: 20px;
+#score{
+    position: fixed;
+    top: 65px;
 }
 
 canvas {
-    border: 4px solid #000; /* Thicker border for better visibility */
-    background-color: #fff; /* White background for the canvas */
+    position: fixed;
+    top: 120px;
+    border: 4px solid #000; 
+    background-color: #E1FFBB;
 }
 
 #menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
 }
 
 .hidden {
     display: none;
 }
 
-#restartButton {
+.restartButton {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -43,20 +46,25 @@ canvas {
     color: white;
     border: none;
     border-radius: 5px;
+    position: fixed;
+    top: 570px;
 }
 
 #controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
     margin-top: 20px;
 }
 
+#chooseSpeed {
+    position: fixed;
+    top: 90px;
+}
+
 .control-button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 10px;
-    font-size: 18px;
+    font-size: 15px;
     background-color: #4CAF50;
     color: white;
     border: none;

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 190px);
+    grid-template-rows: repeat(3, 190px);
+    margin-top: 50px;
+}
+
+.redHome{
+    background-color: red;
+}
+
+.greenHome{
+    background-color: green;
+}
+
+.blueHome{
+    background-color: blue;
+    flex-basis: 40%;
+}
+
+.yellowHome{
+    background-color: yellow;
+    flex-basis: 40%;
+}
+
+.center{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.pathVer{
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pathHor{
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RowVer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1px;
+}
+
+.RowHor{
+    flex: 1;
+    display: flex;
+    margin-left: 1px;
+}
+
+.cell{
+    background-color: white;
+}
+
+.RowVer .cell{
+    height: 30px;
+    margin-top: 1px;
+}
+
+.RowHor .cell{
+    width: 30px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+img{
+    width: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#dice-result {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.turn p {
+    font-size: 20px;
+    margin-top: 10px;
+}
