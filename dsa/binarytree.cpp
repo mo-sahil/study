@@ -1,73 +1,96 @@
 #include <iostream>
-#include <queue>
+#include <stack>
+#include <string>
+#include <climits>
 using namespace std;
 
-class node{
-    public:
-        int data;
-        node *left;
-        node *right;
+class node
+{
+public:
+    int data;
+    node *left;
+    node *right;
 
-    node(int d){
-        this -> data = d;
-        this -> left = NULL;
-        this -> right = NULL;
+    node(int d)
+    {
+        this->data = d;
+        this->left = NULL;
+        this->right = NULL;
     }
 };
 
-node* buildTree(node *root){
-    cout << "Enter data: " << endl;
-    int data;
-    cin >> data;
-    root = new node(data);
-    if(data == -1){
-        return NULL;
-    }
-
-    cout << "Enter data for inserting in left of " << data << endl;
-    root->left = buildTree(root->left);
-    cout << "Enter data for inserting in right of " << data << endl;
-    root->right = buildTree(root->right);
+node *buildTree(node *root)
+{
+    root->data = 50;
+    root->left = new node(40);
+    root->right = new node(60);
+    root->left->left = new node(30);
+    root->left->right = new node(45);
+    root->left->left->left = new node(25);
+    root->left->left->right = new node(45);
 
     return root;
 }
 
-void levelOrderTraversal(node *root){
-    queue <node*> q;
-    q.push(root);
-    q.push(NULL);
+void inorder(node *root)
+{
+    if (root == NULL)
+        return;
 
-    while(!q.empty()){
-        node* temp = q.front();
-        
-        q.pop();
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
+}
 
-        if(temp == NULL){
-            cout << endl;
-            if(!q.empty()){
-                q.push(NULL);
-            }
-        }else{
-            cout << temp -> data << " ";
-            if(temp->left){
-                q.push(temp->left);
-            }
-            if(temp->right){
-                q.push(temp->right);
-            }
+void inorderIterative(node *root)
+{
+    stack<node *> s;
+    while (root != NULL || !s.empty())
+    {
+        while (root != NULL)
+        {
+            s.push(root);
+            root = root->left;
         }
+
+        root = s.top();
+        s.pop();
+
+        cout << root->data << " ";
+        root = root->right;
     }
 }
 
-int main(){
-    node* root = NULL;
+int isValid = true;
 
+void isBST(node *root, int minimum, int maximum)
+{
+    if (root == NULL || !isValid)
+        return;
+
+    if (root->data <= minimum || root->data >= maximum)
+    {
+        isValid = false;
+        return;
+    }
+
+    isBST(root->left, minimum, root->data);
+    isBST(root->right, root->data, maximum);
+}
+
+int main()
+{
+    node *root = NULL;
+
+    cout << "Enter data: " << endl;
     root = buildTree(root);
 
-    //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
-    cout << "Level order traversal: " << endl;
-    levelOrderTraversal(root);
+    cout << "inorder traversal: " << endl;
+    inorderIterative(root);
     cout << endl;
+
+    isBST(root, INT_MIN, INT_MAX);
+    cout << isValid << endl;
 
     return 0;
 }
